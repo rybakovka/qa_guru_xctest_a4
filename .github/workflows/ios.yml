@@ -1,0 +1,19 @@
+name: iOS starter workflow
+
+on:
+  workflow_dispatch
+
+jobs:
+  build:
+    name: Build and Test default scheme using any available iPhone simulator
+    runs-on: macos
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup env
+        run: env
+      - name: Build app
+        run: pwd
+      - name: Run tests
+        run: pwd
